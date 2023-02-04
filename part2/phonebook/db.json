@@ -1,0 +1,19 @@
+{
+  "persons": [
+    {
+      "id": 2,
+      "name": "Stan Smith",
+      "number": "123-3455-789"
+    },
+    {
+      "id": 3,
+      "name": "Lucas Tkacz",
+      "number": "654-7622-789"
+    },
+    {
+      "id": 4,
+      "name": "Mark Zuckerberg",
+      "number": "666-6666-666"
+    }
+  ]
+}
