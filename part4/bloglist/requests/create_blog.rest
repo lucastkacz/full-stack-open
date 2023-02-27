@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Chad Chadington",
+  "author": "123-123132",
+  "url": "http://www.chadchadington.com",
+  "liked": 3
+}
