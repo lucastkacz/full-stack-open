@@ -2,8 +2,9 @@ POST http://localhost:3003/api/blogs
 Content-Type: application/json
 
 {
-  "title": "Chad Chadington",
-  "author": "123-123132",
-  "url": "http://www.chadchadington.com",
-  "liked": 3
+  "title": "toid seether 9000",
+  "author": "Chand Landster Evictius",
+  "url": "http://www.dontforgetthetip.com",
+  "likes": 6,
+  "userId" : "64000a5bfbed2703837618dc"
 }

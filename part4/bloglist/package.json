@@ -4,24 +4,30 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "node index.js",
-		"dev": "nodemon index.js",
-		"test": "jest --verbose --coverage"
+		"start": "NODE_ENV=production node index.js",
+		"dev": "NODE_ENV=development nodemon index.js",
+		"testdev": "NODE_ENV=test nodemon index.js",
+		"test": "NODE_ENV=test jest --verbose --runInBand"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"bcrypt": "^5.1.0",
 		"cors": "^2.8.5",
 		"dotenv": "^16.0.3",
 		"express": "^4.18.2",
-		"mongoose": "^6.10.0"
+		"express-async-errors": "^3.1.1",
+		"mongoose": "^6.10.0",
+		"mongoose-unique-validator": "^3.1.0"
 	},
 	"devDependencies": {
 		"jest": "^29.4.3",
-		"nodemon": "^2.0.20"
+		"nodemon": "^2.0.20",
+		"supertest": "^6.3.3"
 	},
 	"jest": {
-		"testEnvironment": "node"
+		"testEnvironment": "node",
+		"globalTeardown": "./tests/teardown.js"
 	}
 }
