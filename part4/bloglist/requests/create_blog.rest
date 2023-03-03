@@ -1,10 +1,11 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBlcGUiLCJpZCI6IjY0MDBmODRkZmEwN2I3OGExMzU3YzI5NCIsImlhdCI6MTY3NzgxMTIwOCwiZXhwIjoxNjc3ODE0ODA4fQ.2g8QWCy9E1kIiS3pnYZ8OMtKwfS30d8Ltd84TWIXahY
 
 {
-  "title": "toid seether 9000",
-  "author": "Chand Landster Evictius",
-  "url": "http://www.dontforgetthetip.com",
-  "likes": 6,
-  "userId" : "64000a5bfbed2703837618dc"
+  "title": "Rents Due",
+  "author": "LandTHAD",
+  "url": "http://www.mwefwwewefwfefwewewecacademy.com",
+  "likes": 6969,
+  "userId" : "6400f84dfa07b78a1357c294"
 }
