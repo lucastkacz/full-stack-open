@@ -1,0 +1,28 @@
+====================================================================================================
+to run app locally
+
+npm start
+    inside the backend
+    
+npm run dev
+    inside the frontend
+
+since the baseUrl has been changed (const baseUrl = '/api/notes'), we need to modify the vite.config.js file to include a proxy
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+      },
+    }
+  },
+})
+
+====================================================================================================
+npm run build
+    a production build of applications created with Vite
+
+cp -r dist ../phonebook-backend/
+    to move the dist folder to the backend

@@ -1,0 +1,22 @@
+npm install --save-dev jest
+The ESLint configuration we added to the project in the previous part 
+complains about the test and expect commands in our test file since the
+configuration does not allow globals. Let's get rid of the complaints 
+by adding "jest": true to the env property in the .eslintrc.js file.
+
+run tests individually:
+npm test -- tests/note_api.test.js
+The -t option can be used for running tests with a specific name:
+npm test -- -t "a specific note is within the returned notes"
+
+
+=====================================================================
+supertest package to help us write our tests for testing the API
+npm install --save-dev supertest
+
+====================================================================
+One starts to wonder if it would be possible to refactor the code to eliminate the catch from the methods?
+The express-async-errors library has a solution for this.
+npm install express-async-errors
+Because of the library, we do not need the next(exception) call anymore. The library handles everything under 
+the hood. If an exception occurs in an async route, the execution is automatically passed to the error handling middleware.
